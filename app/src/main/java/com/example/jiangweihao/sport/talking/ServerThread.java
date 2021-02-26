@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import android.util.Log;
 
@@ -87,7 +87,7 @@ public class ServerThread extends Thread {
         }
     }
 
-    class ClientChannel implements Runnable{
+    class ClientChannel implements Runnable {
         private BufferedReader br = null;
       //  private BufferedWriter bw = null;
         private DataOutputStream dos = null;

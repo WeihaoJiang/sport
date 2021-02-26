@@ -17,10 +17,11 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
-import com.linzg.www.androidinternet.R;
-import com.linzg.www.androidinternet.SearchServerThread;
-import com.linzg.www.androidinternet.ThreadCallback;
-import com.linzg.www.androidinternet.util.CostomUtil;
+
+import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.talking.SearchServerThread;
+import com.example.jiangweihao.sport.talking.ThreadCallback;
+import com.example.jiangweihao.sport.talking.util.CostomUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,7 +32,7 @@ import java.util.Map;
  * Created by asus on 2017/9/13.
  */
 
-public class RoomsActivity extends AppCompatActivity implements View.OnClickListener,ThreadCallback {
+public class RoomsActivity extends AppCompatActivity implements View.OnClickListener, ThreadCallback {
     private static final String TAG = "RoomsActivity";
     private SearchServerThread searchThread = null;
     private Button searchBut = null;

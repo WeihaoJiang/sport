@@ -18,9 +18,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.linzg.www.androidinternet.R;
-import com.linzg.www.androidinternet.ServerService;
-import com.linzg.www.androidinternet.util.CostomUtil;
+import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.talking.ServerService;
+import com.example.jiangweihao.sport.talking.util.CostomUtil;
+
 
 /**
  * Created by asus on 2017/9/13.

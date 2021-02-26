@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import java.net.DatagramSocket;
 import java.net.MulticastSocket;

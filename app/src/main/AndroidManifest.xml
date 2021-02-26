@@ -43,6 +43,17 @@
         <activity android:name="com.avos.avoscloud.feedback.ThreadActivity" />
         <activity android:name=".coding.activity.ReserveActivity"/>
         <activity android:name=".coding.activity.AppointActivity"></activity>
+        <activity
+            android:name=".talking.activity.PrepareActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".talking.activity.RoomsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".talking.activity.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <service android:name=".talking.ServerService"/>
     </application>
 
 </manifest>

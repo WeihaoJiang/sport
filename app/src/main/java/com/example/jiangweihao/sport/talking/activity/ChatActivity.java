@@ -1,12 +1,12 @@
-package com.linzg.www.androidinternet.activity;
+package com.example.jiangweihao.sport.talking.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -24,10 +24,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.linzg.www.androidinternet.Client;
-import com.linzg.www.androidinternet.R;
-import com.linzg.www.androidinternet.ServerService;
-import com.linzg.www.androidinternet.util.CostomUtil;
+import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.talking.Client;
+import com.example.jiangweihao.sport.talking.ServerService;
+import com.example.jiangweihao.sport.talking.util.CostomUtil;
 
 
 public class ChatActivity extends AppCompatActivity {
@@ -58,13 +58,13 @@ public class ChatActivity extends AppCompatActivity {
                         scrollToButtom();
                         break;
                     case Client.WHAT_CLIENT_CREATE:
-                        Toast.makeText(getApplicationContext(),"成功加入聊天室",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"成功加入聊天室", Toast.LENGTH_SHORT).show();
                         break;
                     case Client.WHAT_CLIENT_NOT_CREATE:
                         //client连接失败时，client置空，提示Toast，退出聊天界面
                         client = null;
                         Log.d(TAG, "onDie: 服务器异常，连接失败，无法进入聊天室");
-                        Toast.makeText(getApplicationContext(),"该聊天室已被关闭或者您已不在该局域网中",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"该聊天室已被关闭或者您已不在该局域网中", Toast.LENGTH_SHORT).show();
                         finish();
                         break;
                     case Client.WHAT_SEND_SUCCESS:
@@ -84,7 +84,7 @@ public class ChatActivity extends AppCompatActivity {
                                     "*系统提示*\n");
                             client.stopNow();
                             scrollToButtom();
-                        } else if (isServer && CostomUtil.isServiceRunning(getApplicationContext(),ServerService.CLASSNAME)) {
+                        } else if (isServer && CostomUtil.isServiceRunning(getApplicationContext(), ServerService.CLASSNAME)) {
                             Toast.makeText(getApplicationContext(), "您的聊天室连接已断开", Toast.LENGTH_SHORT).show();
                             chatContent.append("\n*系统提示*\n\n" +
                                     "\u3000\u3000* 您创建的聊天室已断开，已无法接受与发送消息。\n\n" +

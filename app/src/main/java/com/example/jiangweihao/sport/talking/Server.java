@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import android.os.Handler;
 import android.util.Log;
@@ -27,7 +27,7 @@ public class Server{
     private DatagramPacket ipPacket = null;
     private boolean isAleady = false;
     private Handler mHandler = null;
-    private Server(String ip,String userName,Handler handler){
+    private Server(String ip, String userName, Handler handler){
         try {
             mHandler = handler;
             StringBuffer sb = new StringBuffer();
@@ -42,7 +42,7 @@ public class Server{
             e.printStackTrace();
         }
     }
-    public static Server getServer(String ip,String userName,Handler handler){
+    public static Server getServer(String ip, String userName, Handler handler){
         if (mServer == null){
             synchronized (Server.class) {
                 if (mServer == null) {
@@ -67,7 +67,7 @@ public class Server{
                 String s = new String(data,0,packet.getLength());
                 Log.d(TAG, "run: 收到客户端的ip：" + s);
                 //向客户端回复服务器的ip地址
-                ipPacket = new DatagramPacket(serverIPAndName,serverIPAndName.length,InetAddress.getByName(s),8888);
+                ipPacket = new DatagramPacket(serverIPAndName,serverIPAndName.length, InetAddress.getByName(s),8888);
                 sendSoket.send(ipPacket);
                 Log.d(TAG, "run: 收到第" + (i++) +"次请求");
             }

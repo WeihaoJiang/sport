@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -89,7 +89,7 @@ public class SearchServerThread extends Thread {
      * @param ip    要判断的ip
      * @return  是否获取过
      */
-    private boolean isRecevied(List list,String ip){
+    private boolean isRecevied(List list, String ip){
         boolean isExist = false;
         for (int a = 0;a < list.size() ;a++){
             if (list.get(a).equals(ip)) {

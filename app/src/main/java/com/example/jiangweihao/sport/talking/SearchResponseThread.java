@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import android.util.Log;
 
@@ -43,7 +43,7 @@ public class SearchResponseThread extends Thread {
                 String s = new String(receiveBytes,0,receivePacket.getLength());
                 Log.d(TAG, "run: 收到客户端的ip：" + s);
                 //向客户端回复服务器的ip地址
-                sendPacket = new DatagramPacket(serverIPAndName,serverIPAndName.length,InetAddress.getByName(s),Port.PORT_SERVER_RESPOND);
+                sendPacket = new DatagramPacket(serverIPAndName,serverIPAndName.length, InetAddress.getByName(s),Port.PORT_SERVER_RESPOND);
                 if (sendSoket == null)
                     Log.d(TAG, "run: sendSocket为空 ");
                 for (int a = 0 ;a < 2 ;a++) //发送两次

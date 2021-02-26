@@ -1,4 +1,4 @@
-package com.linzg.www.androidinternet;
+package com.example.jiangweihao.sport.talking;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -45,7 +45,7 @@ public class Client{
     private String serverIp = "";
     private String userName = "";
     public Thread connect = null;
-    public Client(String ip,String userName,Handler handler,boolean isServer){
+    public Client(String ip, String userName, Handler handler, boolean isServer){
         Log.d(TAG, "Client: 构造ip:" + ip);
         mHandler = handler;
         this.serverIp = ip;
@@ -58,11 +58,11 @@ public class Client{
      *  客户端连接线程
      *  创建客户端对象时运行一次，连接失败则 创建Client失败
      */
-    class Connect extends Thread{
+    class Connect extends Thread {
         private String ip;
         private String name;
         //private boolean isReconnect = false;
-        public Connect(String ip,String userName,boolean isReconnect){
+        public Connect(String ip, String userName, boolean isReconnect){
             this.ip = ip;
             this.name = userName;
             //this.isReconnect = isReconnect;
@@ -163,7 +163,7 @@ public class Client{
     class SendMsg implements Runnable {
         private String s;
         private boolean isHeart;
-        public SendMsg(String s,boolean isHeart){
+        public SendMsg(String s, boolean isHeart){
             this.s = s;
             this.isHeart = isHeart;
         }
@@ -199,7 +199,7 @@ public class Client{
         }
     }
 
-    class RecevieMsg extends Thread{
+    class RecevieMsg extends Thread {
         @Override
         public void run() {
             while(isRunning){
@@ -238,7 +238,7 @@ public class Client{
             Log.d(TAG, "client接收线程结束");
         }
     }
-    public void connect(String ip,String userName,boolean isReconnect){
+    public void connect(String ip, String userName, boolean isReconnect){
 
         connect = new Connect(ip,userName,isReconnect);
         connect.start();  //开始连接服务器
