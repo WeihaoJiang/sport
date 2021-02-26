@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_titile"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/color_dbac62">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我的兴趣团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:drawableTop="@mipmap/card_weather_changecityicon"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="附近"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_home_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

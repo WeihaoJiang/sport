@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_dbac62">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="center"
+            android:src="@drawable/wb_back_btn" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="商品详情"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/rl_title"
+        android:background="#FFF"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ac_goods_details_img"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:scaleType="centerInside"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品名称："
+                />
+
+            <TextView
+                android:id="@+id/ac_goods_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPhone7"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品价格："
+                />
+
+
+            <TextView
+                android:id="@+id/ac_goods_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥888"
+                android:textColor="#FF0000"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细描述："
+
+                />
+
+            <TextView
+                android:id="@+id/ac_goods_details_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPhone7/32G/玫瑰金色"
+                android:textSize="20sp"/>
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#dfdfdf"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/ac_goods_details_car"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/color_dbac62"
+        android:gravity="center"
+        android:text="添加至购物车"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

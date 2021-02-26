@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_sell_car_banner_bg">
+
+
+    <LinearLayout
+        android:id="@+id/home_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="36dp"
+            android:text="快速买车"
+            android:textColor="@color/color_ff"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/home_number"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:lines="2"
+            android:layout_marginLeft="30dp"
+
+            android:text="放心买车，留下电话坐等卖家联系"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

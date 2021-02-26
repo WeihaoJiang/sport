@@ -1,0 +1,271 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_titile"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/color_dbac62">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="嗨爆兴趣团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginRight="10dp"
+                android:background="@color/transparent"
+                android:drawableTop="@mipmap/card_weather_changecityicon"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="附近"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_activity1"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@color/c_a59a93">
+
+            <EditText
+                android:id="@+id/tv_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="乒乓球"
+                android:layout_toStartOf="@id/bt_join1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bt_join1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="未成团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_activity2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@color/c_a59a93">
+
+            <EditText
+                android:id="@+id/tv_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="游泳"
+                android:layout_toStartOf="@id/bt_join2"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bt_join2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="未成团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_activity3"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@color/c_a59a93">
+
+            <EditText
+                android:id="@+id/tv_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="攀岩"
+                android:layout_toStartOf="@id/bt_join3"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bt_join3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="未成团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_activity4"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@color/c_a59a93">
+
+            <EditText
+                android:id="@+id/tv_title4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="滑雪"
+                android:layout_toStartOf="@id/bt_join4"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bt_join4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="已成团"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:stretchColumns="1">-->
+
+<!--            <TableRow android:padding="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/product_name"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etpoduct_name"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow android:padding="6dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="场地位置"-->
+<!--                    android:textSize="15sp" />-->
+<!--                <EditText-->
+<!--                    android:id="@+id/describe"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:lines="3"-->
+<!--                    android:textSize="15sp" />-->
+<!--            </TableRow>-->
+
+
+<!--            <TableRow android:padding="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="联系电话:"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/price"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:singleLine="true" />-->
+<!--            </TableRow>-->
+
+
+<!--            <TableRow android:padding="12dp">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button_select_publish"-->
+<!--                    style="?android:textAppearanceSmall"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="选择一张照片"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageview_select_publish"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@android:drawable/screen_background_light_transparent" />-->
+<!--            </TableRow>-->
+
+<!--            <TableRow android:padding="12dp">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/button_submit_publish"-->
+<!--                    style="?android:textAppearanceSmall"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:text="提交"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </TableRow>-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/mProgess"-->
+<!--                style="?android:attr/progressBarStyleLarge"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:visibility="gone" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/user_mess"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content" />-->
+<!--        </TableLayout>-->
+    </LinearLayout>
+
+
+
+
+</ScrollView>

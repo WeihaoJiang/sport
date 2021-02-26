@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rll"
+    android:layout_width="match_parent"
+    android:background="@color/c_a59a93"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:text="乒乓球"
+            android:layout_toStartOf="@id/bt_join"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/bt_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="未成团"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/buy_gold"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    </RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_3777d6">#3777D6</color>
+    <color name="white_alphe">#99ffffff</color> <!-- 白色透明 -->
+    <color name="gray">#efefef</color> <!-- 浅灰 -->
+    <color name="green">#13b5b1</color>
+
+    <!--################ 自定义颜色 ################ -->
+    <color name="color_ea">#eaeaea</color>
+    <color name="colorHintText">#9e9eA8</color>
+    <color name="color_333">#333333</color>
+    <color name="color_alpha_33">#88333333</color>
+    <color name="color_33">#333333</color>
+    <color name="color_888">#F6C888</color>
+    <color name="color_ff">#ffffff</color>
+    <color name="color_9ea8">#9E9EA8</color>
+    <color name="color_E3">#E3E3E3</color>
+    <color name="color_aa">#aaaaaa</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+    <color name="color_fff">#ffffff</color>
+    <color name="color_D79E4B">#D79E4B</color>
+    <color name="color_F19220">#F19220</color>
+    <color name="color_2427">#242427</color>
+    <color name="color_55">#555555</color>
+    <color name="color_f9">#f9f9f9</color>
+    <color name="color_000">#000000</color>
+    <color name="color_f3">#f3f3f3</color>
+    <color name="color_f8f9fa">#F8F9Fa</color>
+    <color name="color_D1C3A0">#d1c3a0</color>
+    <color name="color_FFEBC990">#FFEBC990</color>
+    <color name="color_FF9E9EA8">#FF9E9EA8</color>
+    <color name="color_9E9EA8">#9E9EA8</color>
+    <color name="color_58">#585858</color>
+    <color name="color_ff552e">#ff552e</color>
+    <color name="color_dbac62">#DBAC62</color>
+    <color name="color_c4b697">#c4b697</color>
+    <color name="color_ebc990">#EBC990</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_EFEFEF">#efefef</color>
+    <color name="color_7799DD">#7799DD</color>
+    <color name="city_item_divider_color">#dddddc</color>
+
+
+    <color name="color_276BBD">#276BBD</color>
+    <color name="color_1A50B9">#1A50B9</color>
+
+    <color name="color_a5bbe0">#a5bbe0</color>
+    <color name="color_96aedc">#96aedc</color>
+    <color name="color_guche_result_bg">#252427</color>
+    <color name="color_e1b672">#E1B672</color>
+    <color name="color_30">#303033</color>
+    <!-- new -->
+    <color name="c_333333">#333333</color>
+    <color name="color_3DB">#D3D3DB</color>
+
+    <color name="c_d8d3cf">#d8d3cf</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="c_3777D6">#3777D6</color>
+    <color name="c_a59a93">#a59a93</color>
+    <color name="c_d3">#D3D3D3</color>
+    <!--pressed-->
+    <color name="c_b9afa9">#b9afa9</color>
+
+    <color name="c_c35b3a">#c35b3a</color>
+    <color name="c_f2">#f2f2f2</color>
+
+    <color name="c_9d472c">#9d472c</color>
+    <color name="color_f6">#f6f6f6</color>
+
+
+    <color name="color_DDA75E">#DDA75E</color>
+    <color name="color_E9BF84">#E9BF84</color>
+    <color name="color_FFC26D">#FFC26D</color>
+    <color name="color_7094DA">#7094DA</color>
+    <color name="color_6685BD">#6685BD</color>
+
+    <color name="reflection_default_to">#00000000</color>
+    <color name="tradeline_detail_tool_grey_color">#808080</color>
+    <color name="tradeline_filter_view_divider">#dedfe0</color>
+    <color name="tradeline_filter_list_item_bg">@color/white</color>
+    <color name="black">#000000</color>
+    <color name="tradeline_filter_btn_text_pressed">#ff6a22</color>
+    <color name="tradeline_filter_list_item_other_bg">#faf8f9fa</color>
+    <color name="tradeline_filter_btn_text_normal">@color/black</color>
+    <color name="wb_sift_list_more_div">#cccccc</color>
+    <color name="tradeline_list_divider_common">#dedfe0</color>
+    <color name="request_loading">#c0000000</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_FF3E09">#FF3E09</color>
+
+    <color name="tradeline_history_text_normal_color">#808080</color>
+    <color name="wb_title_text_color">#232528</color>
+    <color name="wb_sift_more_content_selnormal">#ababab</color>
+    <color name="tradeline_filter_radiogroup_press">#FF552E</color>
+    <color name="tradeline_filter_radiogroup_unpress">#AAAAAA</color>
+    <color name="pingyintitle_color">#f8f9fa</color>
+    <color name="wb_sift_logo_press">#b5b5b6</color>
+    <color name="wb_sift_more_content_select">#474747</color>
+    <color name="city_item_letter_color">#8c8c8c</color>
+    <color name="color_333333">#333333</color>
+
+    <color name="city_overlay_text_color">#ff7800</color>
+    <color name="color_F8F9FA">#F8F9FA</color>
+    <color name="colorGray">#F6F6F6</color>
+    <color name="colorTextGray">#555555</color>
+    <color name="colorOrage">#252427</color>
+    <color name="colorOrageback">#FFEFEB</color>
+    <color name="color_666666">#666666</color>
+    <color name="tradeline_list_divider">#EFEFEF</color>
+    <color name="tradeline_list_item_title_color">#000000</color>
+    <color name="car_list_item_price_color">#ff662c</color>
+    <color name="car_list_item_param_color">#808080</color>
+    <color name="car_list_item_color">#ffffff</color>
+    <color name="car_list_item_selecter_color">#f6f6f6</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="tradeline_list_item_param_color">#808080</color>
+    <color name="car_detail_auth_area_title_text_color">#333333</color>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <color name="default_title_indicator_footer_color">#FF33B5E5</color>
+    <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
+    <color name="default_title_indicator_text_color">#BBFFFFFF</color>
+    <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
+
+    <color name="buy_shop_color">#FF6D44</color>
+    <color name="sell_shop_color">#6685BD</color>
+    <color name="buy_person_color">#F8A946</color>
+    <color name="sell_person_color">#7DBFFD</color>
+    <color name="car_filter_select">#E7F3FA</color>
+    <color name="buy_gold">#F19220</color>
+    <color name="sell_gold">#7094DA</color>
+    <color name="color_64B2ED">#64B2ED</color>
+    <color name="color_fbfbfb">#FBFBFB</color>
+    <color name="color_7C7C90">#7c7c90</color>
+    <color name="color_F1F2F5">#f1f2f5</color>
+    <color name="color_334ABB">#334ABB</color>
+    <color name="color_F8A946">#f8a946</color>
+    <color name="color_D3D4D9">#d3d4d9</color>
+    <color name="color_4C6CBB">#4c6cbb</color>
+    <color name="color_a7aabc">#a7aabc</color>
+    <color name="color_4c6cbb">#4c6cbb</color>
+    <color name="color_00ab84">#00ab84</color>
+    <color name="color_ECEDEF">#ecedef</color>
+    <color name="color_A7AABC">#A7AABC</color>
+    <color name="color_1D5CCC">#1D5CCC</color>
+    <color name="color_8AAAE5">#8AAAE5</color>
+    <color name="color_D2DEF5">#D2DEF5</color>
+    <color name="color_5880AA">#5880AA</color>
+    <color name="color_5880aa">#5880AA</color>
+
+    <color name="titleBg">#f2f2f2</color>
+    <color name="cal_sign_color">#ee5b4f</color>
+    <color name="cal_buckle_color">#d4d4d4</color>
+    <color name="cal_safe_color">#b7d961</color>
+    <color name="cal_buckle_text_color">#949494</color>
+    <color name="drak_calendar_text_color">#222222</color>
+    <color name="base_black_title_color">#222222</color>
+    <color name="dedede">#dedede</color>
+
+    <color name="arc1">#099bfb</color>
+    <color name="arc2">#37d547</color>
+    <color name="arc3">#f86669</color>
+    <color name="arc_text">#999999</color>
+    <color name="excel_bg">#bfbfbf</color>
+    <color name="arc_line">#cfcfcf</color>
+    <color name="selectColor">#f96767</color>
+    <color name="arc_bg">#f0f0f0</color>
+    <color name="arc_inteval">#E8e8e8</color>
+    <color name="arc_temp">#333333</color>
+    <color name="content_bg">#eeeeee</color>
+    <color name="column_bg">#099bfb</color>
+    <color name="arc21">#fc843b</color>
+    <color name="arc22">#37d547</color>
+    <color name="arc23">#079df9</color>
+    <color name="windows_bg">#f6f6f6</color>
+
+    <color name="github_con_0">#ebedf0</color>
+    <color name="github_con_1">#c6e48b</color>
+    <color name="github_con_2">#7bc96f</color>
+    <color name="github_con_3">#239a3b</color>
+    <color name="github_con_4">#196127</color>
+    <color name="seat_y_bg">#80000000</color>
+    <color name="text_color">#999999</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rll"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <!-- 左边的图片 -->
+    <RelativeLayout
+        android:id="@+id/img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/list_item_img"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="点击取消"
+             />
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="14dp"
+        android:includeFontPadding="false"
+        android:layout_toRightOf="@id/img_layout"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/list_item_miaoshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:includeFontPadding="false"
+        android:layout_toRightOf="@id/img_layout"
+        android:layout_below="@id/list_item_title"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="11sp" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/img_layout"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="89dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="2222"
+            android:id="@+id/car_list_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_dbac62"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_marginBottom="2dp"
+            android:layout_alignBottom="@id/car_list_item_price"
+            android:layout_toRightOf="@+id/car_list_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="万"
+            android:includeFontPadding="false"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="11sp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/car_list_item_pricedesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            android:textSize="11sp" />
+        <!--划算标签-->
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

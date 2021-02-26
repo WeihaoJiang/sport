@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_sure"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/checkbox"
+        android:button="@null"
+        android:checked="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="已阅读并同意"
+        android:textColor="@color/color_666"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_xieyi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="《用户使用协议》"
+        android:textColor="@color/color_3777d6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="和"
+        android:textColor="@color/color_666"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_tiaokuan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="《隐私条款》"
+        android:textColor="@color/color_3777d6" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">sport</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">创建普通账号</string>
+    <string name="action_sign_in_manage">创建管理账号</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homefragment">主页</string>
+    <string name="publishfragment">发布</string>
+    <string name="shopingfragment">购物车</string>
+    <string name="mefragment">我的</string>
+    <string name="product_name">场地名称:</string>
+    <string name="user_name">用户信息</string>
+    <string name="classfy">分类</string>
+    <string name="detail">详情</string>
+    <string name="telephonenumber">联系电话:</string>
+    <string name="E_mail">电子邮件:</string>
+    <string name="login_manage">登录(我是管理员)</string>
+    <string name="login_normal">登录（我是普通用户）</string>
+    <string name="register">注册</string>
+    <string name="username">用户名</string>
+    <string name="action_logout">注销</string>
+    <string name="buy_appraise">查看\n场地</string>
+    <string name="apprise_reset_select_b">清空\n全部</string>
+
+    <string name="tx_allselect">全选</string>
+    <string name="tx_total">合计</string>
+    <string name="tx_no_carriage">不含运费</string>
+    <string name="tx_clearing">结算</string>
+    <string name="tx_favorite">移入收藏夹</string>
+    <string name="tx_delete">删除</string>
+    <string name="tx_huibi">G币</string>
+    <string name="tx_edit">编辑</string>
+    <string name="tx_invoice_info">发票信息</string>
+    <string name="tx_goods_total">商品总额（含运费）</string>
+    <string name="tx_favorable">优惠</string>
+    <string name="tx_return">返现</string>
+    <string name="tx_sevenday">确认收货后七天生效</string>
+    <string name="tx_no_invoice">不开发票</string>
+    <string name="tx_zong">总额</string>
+    <string name="btn_submit_order">提交订单</string>
+
+    <!-- 验证码 -->
+    <string name="auth_code_verify_title">请输入图片验证码</string>
+    <string name="auth_code_verrify_tip">验证码填写错误</string>
+    <string name="auth_code_verified_img_unable">点击刷新</string>
+
+    <string name="share">分享</string>
+    <string name="input_tel_hint">请输入手机号码</string>
+    <string name="input_code_hint">请输入验证码</string>
+    <string name="btn_send_code_hint">发送验证码</string>
+    <string name="want_sell">我要卖车</string>
+    <string name="want_buy">我要买车</string>
+
+    <!--我的页面-->
+    <string name="me_login_now">立即登录</string>
+    <string name="me_feedback">意见反馈</string>
+    <string name="me_collection">收藏</string>
+    <string name="me_about_us">关于我们</string>
+    <string name="me_setting">查看所有用户</string>
+    <string name="me_appraise_history">估价历史</string>
+    <string name="me_look_all">查看全部</string>
+    <string name="me_setting_clear_cache">清除缓存</string>
+    <string name="me_setting_logout">退出</string>
+    <string name="business_rank_title">该车型收车车商推荐</string>
+    <string name="car_type">品牌车型选择</string>
+    <string name="select_car_type">请先选择车型</string>
+    <string name="select_car_age">请选择车龄</string>
+    <string name="select_car_mileage">请填写里程</string>
+    <string name="select_city">请选择城市</string>
+    <string name="place_code">%s上牌</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_padding">15dp</dimen>
+
+    <!--保值率-->
+    <dimen name="dp_startx">40dp</dimen>
+    <dimen name="dp_starty">25dp</dimen>
+    <dimen name="dp_height">263dp</dimen>
+    <dimen name="dp_space">45dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="dp_4.5">4.5dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <!---->
+    <dimen name="dp_103">103dp</dimen>
+
+
+    <dimen name="wb_sift_layout_margin_lr">5.3dip</dimen>
+    <dimen name="tradeline_filter_layout_height">44dip</dimen>
+    <dimen name="wb_title_full_height">45dip</dimen>
+    <dimen name="city_letter_big_size">16dip</dimen>
+    <dimen name="city_letter_size">12dip</dimen>
+    <dimen name="wb_home_title_textsize_26">17.3sp</dimen>
+    <dimen name="wb_sift_list_item_height">43.3dip</dimen>
+    <dimen name="car_listdata_item_image_width_modea">105dip</dimen>
+    <dimen name="car_listdata_item_image_height_modea">78.75dip</dimen>
+    <dimen name="car_listdata_item_widget_v_margin">0.5dip</dimen>
+    <dimen name="car_list_item_price_size">14dip</dimen>
+    <dimen name="car_listdata_item_widget_tradeline_margin">15dip</dimen>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <dimen name="default_title_indicator_clip_padding">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20dp</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">7dp</dimen>
+    <dimen name="default_title_indicator_text_size">15dp</dimen>
+    <dimen name="default_title_indicator_title_padding">5dp</dimen>
+    <dimen name="default_title_indicator_top_padding">7dp</dimen>
+    <!--历史价格走势-->
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_105">105dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_16">16dp</dimen>
+</resources>
