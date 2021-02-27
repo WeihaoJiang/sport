@@ -29,6 +29,8 @@ import com.example.jiangweihao.sport.talking.Client;
 import com.example.jiangweihao.sport.talking.ServerService;
 import com.example.jiangweihao.sport.talking.util.CostomUtil;
 
+import java.util.Objects;
+
 
 public class ChatActivity extends AppCompatActivity {
     private static final String TAG = "ChatActivity";
@@ -110,7 +112,9 @@ public class ChatActivity extends AppCompatActivity {
         }
         isServer = CostomUtil.isServiceRunning(getApplicationContext(),ServerService.CLASSNAME);
         Log.d(TAG, "onCreate: isServer = " + isServer);
-        getSupportActionBar().setTitle(roomName);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setTitle("游泳健身");
+        }
         setContentView(R.layout.activity_chat);
         scroller = (ScrollView) findViewById(R.id.scroller);
         scroller.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
