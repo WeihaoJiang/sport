@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:singleLine="true"
                 android:text="活动详情"
-                android:textColor="@color/white"
+                android:textColor="@color/c_333333"
                 android:textSize="15sp" />
 
         </RelativeLayout>
@@ -61,7 +61,6 @@
             android:layout_below="@+id/detail_fragement"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/shape_solid_radius100_blue"
             android:gravity="center"
