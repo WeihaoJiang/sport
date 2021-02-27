@@ -57,12 +57,12 @@
 
             <ImageView
                 android:id="@+id/iv_swimming_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/dp_20"
-                android:scaleType="center"
-                android:src="@drawable/arrow_more_profile" />
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_more" />
 
             <TextView
                 android:id="@+id/group_name"
@@ -99,12 +99,12 @@
 
             <ImageView
                 android:id="@+id/iv_climb_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/dp_20"
-                android:scaleType="center"
-                android:src="@drawable/arrow_more_profile" />
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_more" />
 
             <TextView
                 android:id="@+id/climb_group_name"
@@ -144,12 +144,12 @@
 
             <ImageView
                 android:id="@+id/iv_badminton_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/dp_20"
-                android:scaleType="center"
-                android:src="@drawable/arrow_more_profile" />
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_more" />
 
             <TextView
                 android:id="@+id/badminton_group_name"
