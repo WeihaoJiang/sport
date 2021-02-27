@@ -77,27 +77,27 @@ public class ChatActivity extends AppCompatActivity {
                         Log.d(TAG, "run: 客户端连接断开，数据发送失败");
                         break;
                     case Client.WHAT_SOCKET_CLOSE:
-                        if (!isServer && !isBackDown) {
-                            Toast.makeText(getApplicationContext(), "聊天室连接已断开", Toast.LENGTH_SHORT).show();
-                            chatContent.append("\n*系统提示*\n\n" +
-                                    "\u3000\u3000* 聊天室连接已断开，已无法接受与发送消息。\n\n" +
-                                    "\u3000\u3000* 可能的原因 ： 聊天室服务器已关闭、您已不在该聊天室局域网内、您的网络连接已断开、其他未知的原因。\n\n" +
-                                    "\u3000\u3000* 聊天室已不可用，请退出该聊天室。\n\n" +
-                                    "*系统提示*\n");
-                            client.stopNow();
-                            scrollToButtom();
-                        } else if (isServer && CostomUtil.isServiceRunning(getApplicationContext(), ServerService.CLASSNAME)) {
-                            Toast.makeText(getApplicationContext(), "您的聊天室连接已断开", Toast.LENGTH_SHORT).show();
-                            chatContent.append("\n*系统提示*\n\n" +
-                                    "\u3000\u3000* 您创建的聊天室已断开，已无法接受与发送消息。\n\n" +
-                                    "\u3000\u3000* 可能的原因 ： 聊天室服务器已关闭、您已不在该聊天室局域网内、您的网络连接已断开、其他未知的原因。\n\n" +
-                                    "\u3000\u3000* 聊天室已不可用，请退出该聊天室。\n\n" +
-                                    "*系统提示*\n");
-                            scrollToButtom();
-                            Intent intent = new Intent(ChatActivity.this, ServerService.class);
-                            client.stopNow();
-                            stopService(intent);
-                        }
+//                        if (!isServer && !isBackDown) {
+//                            Toast.makeText(getApplicationContext(), "聊天室连接已断开", Toast.LENGTH_SHORT).show();
+//                            chatContent.append("\n*系统提示*\n\n" +
+//                                    "\u3000\u3000* 聊天室连接已断开，已无法接受与发送消息。\n\n" +
+//                                    "\u3000\u3000* 可能的原因 ： 聊天室服务器已关闭、您已不在该聊天室局域网内、您的网络连接已断开、其他未知的原因。\n\n" +
+//                                    "\u3000\u3000* 聊天室已不可用，请退出该聊天室。\n\n" +
+//                                    "*系统提示*\n");
+//                            client.stopNow();
+//                            scrollToButtom();
+//                        } else if (isServer && CostomUtil.isServiceRunning(getApplicationContext(), ServerService.CLASSNAME)) {
+//                            Toast.makeText(getApplicationContext(), "您的聊天室连接已断开", Toast.LENGTH_SHORT).show();
+//                            chatContent.append("\n*系统提示*\n\n" +
+//                                    "\u3000\u3000* 您创建的聊天室已断开，已无法接受与发送消息。\n\n" +
+//                                    "\u3000\u3000* 可能的原因 ： 聊天室服务器已关闭、您已不在该聊天室局域网内、您的网络连接已断开、其他未知的原因。\n\n" +
+//                                    "\u3000\u3000* 聊天室已不可用，请退出该聊天室。\n\n" +
+//                                    "*系统提示*\n");
+//                            scrollToButtom();
+//                            Intent intent = new Intent(ChatActivity.this, ServerService.class);
+//                            client.stopNow();
+//                            stopService(intent);
+//                        }
 
                         break;
                 }
@@ -172,24 +172,24 @@ public class ChatActivity extends AppCompatActivity {
     }
     public void onChatBack(){
         if (CostomUtil.isServiceRunning(this, ServerService.CLASSNAME)) {
-            AlertDialog.Builder dialog = new AlertDialog.Builder(this)
-                    .setTitle("提示").setMessage("你创建的聊天室正在运行，退出将会关闭聊天室服务器并结束聊天。是否继续退出？");
-
-            dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                    Intent intent = new Intent(ChatActivity.this, ServerService.class);
-                    client.stopNow();
-                    stopService(intent);
-                    finish();
-                }
-            }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.cancel();
-                }
-            }).show();
+//            AlertDialog.Builder dialog = new AlertDialog.Builder(this)
+//                    .setTitle("提示").setMessage("你创建的聊天室正在运行，退出将会关闭聊天室服务器并结束聊天。是否继续退出？");
+//
+//            dialog.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    dialog.cancel();
+//                    Intent intent = new Intent(ChatActivity.this, ServerService.class);
+//                    client.stopNow();
+//                    stopService(intent);
+//                    finish();
+//                }
+//            }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    dialog.cancel();
+//                }
+//            }).show();
         } else {
             AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                     .setTitle("提示").setMessage("你确定要退出聊天室吗？");
