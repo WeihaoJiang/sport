@@ -80,7 +80,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 if (getActivity() != null) {
                     getActivity().startActivity(new Intent(getActivity(), NearByActivity.class));
                 }
-                break;
+                return;
             case R.id.iv_swimming_back:
                 intent.putExtra("name","游泳队");
                 break;
