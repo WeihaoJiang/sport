@@ -11,6 +11,7 @@
         android:id="@+id/group_name"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:padding="5dp"
         android:gravity="center_vertical"
         android:textSize="20dp"
         android:textColor="@color/black"
@@ -25,10 +26,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:padding="5dp"
         android:textSize="16dp"
-        android:textStyle="bold|italic"
+        android:textColor="#666"
         android:layout_marginTop="@dimen/dp_20"
-        android:text="一点羽毛球小分队详情：\n详情\n详情"
+        android:lines="3"
+        android:text="详情介绍"
         android:background="@drawable/recycle_bg"
         app:layout_constraintTop_toBottomOf="@id/group_name" />
 
@@ -37,6 +40,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
+        android:padding="5dp"
         android:layout_marginTop="@dimen/dp_20"
         android:background="@drawable/recycle_bg"
         app:layout_constraintTop_toBottomOf="@id/description"
@@ -53,6 +57,12 @@
             android:text="活动列表："
              />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f7f7f7"/>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/item_list"
             android:layout_width="match_parent"
