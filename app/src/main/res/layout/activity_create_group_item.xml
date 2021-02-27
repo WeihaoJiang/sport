@@ -15,4 +15,71 @@
         android:layout_marginTop="@dimen/dp_20"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建兴趣组"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back"
+        app:layout_constraintBottom_toBottomOf="@id/back"/>
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="260dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_stroke_radius12_gray_color"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="兴趣组名称"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/group_name"
+        app:layout_constraintBottom_toBottomOf="@id/group_name"/>
+
+    <EditText
+        android:id="@+id/group_description"
+        android:layout_width="260dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:background="@drawable/shape_stroke_radius12_gray_color"
+        app:layout_constraintTop_toBottomOf="@id/group_name"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="兴趣组介绍"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/group_description"
+        app:layout_constraintBottom_toBottomOf="@id/group_description"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_radius100_blue"
+        android:textSize="20dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 </android.support.constraint.ConstraintLayout>
