@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/editBack"
+        android:background="@null"
         android:gravity="bottom">
         <EditText
             android:id="@+id/chat_input"

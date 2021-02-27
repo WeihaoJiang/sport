@@ -1,5 +1,6 @@
 package com.example.jiangweihao.sport.coding.fragment;
 
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.jiangweihao.sport.BuildConfig;
 import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.coding.activity.NearByActivity;
 import com.example.jiangweihao.sport.coding.adapter.HomeAdapter;
 import com.example.jiangweihao.sport.coding.adapter.RecycleViewDivider;
 import com.example.jiangweihao.sport.coding.bean.Activityinfo1;
@@ -58,7 +60,10 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_map:
-                Toast.makeText(getContext(),"搜索附近活动团",Toast.LENGTH_LONG).show();
+//                Toast.makeText(getContext(),"搜索附近活动团",Toast.LENGTH_LONG).show();
+                if (getActivity() != null) {
+                    getActivity().startActivity(new Intent(getActivity(), NearByActivity.class));
+                }
                 break;
         }
     }
