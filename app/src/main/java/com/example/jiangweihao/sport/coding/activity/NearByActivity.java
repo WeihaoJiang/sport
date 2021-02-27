@@ -78,10 +78,9 @@ public class NearByActivity extends AppCompatActivity implements View.OnClickLis
         mRecyclerView = findViewById(R.id.item_list);
         findViewById(R.id.back).setOnClickListener(this);
         findViewById(R.id.location).setOnClickListener(this);
-        itemNameList.add("一点羽毛球组");
-        itemNameList.add("一点篮球组");
-        itemNameList.add("一点足球组");
-        itemNameList.add("一点游泳组");
+        itemNameList.add("游泳组");
+        itemNameList.add("攀岩组");
+        itemNameList.add("羽毛球组");
 
         ItemAdapter adapter = new ItemAdapter(itemNameList);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
