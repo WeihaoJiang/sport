@@ -69,12 +69,14 @@ public class XiaoXiFragment extends BaseFragment implements View.OnClickListener
     private void initData() {
         mUserInfoList.clear();
         SimpleDateFormat   formatter   =   new SimpleDateFormat("HH:mm:ss");
+        Date curDate =  new Date(System.currentTimeMillis());
 
-        for (int i = 0; i<=4;i++){
-            Date curDate =  new Date(System.currentTimeMillis());
-            UserInfo1 userInfo = new UserInfo1("游泳冠军群"+i, formatter.format(curDate),"有人要去恭王府游泳吗？");
-            mUserInfoList.add(userInfo);
-        }
+        UserInfo1 userInfo1 = new UserInfo1("游泳冠军群", formatter.format(curDate),"有人要去恭王府游泳吗？");
+        UserInfo1 userInfo2 = new UserInfo1("go go go 攀岩群", formatter.format(curDate),"昨天的攀岩真的是太棒了？");
+        UserInfo1 userInfo3 = new UserInfo1("羽毛球群", formatter.format(curDate),"谁有多余的羽毛球呀，亲？");
+        mUserInfoList.add(userInfo1);
+        mUserInfoList.add(userInfo2);
+        mUserInfoList.add(userInfo3);
     }
 
 

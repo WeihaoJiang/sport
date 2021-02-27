@@ -62,7 +62,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mBadmintonBack = view.findViewById(R.id.iv_badminton_back);
         mSwimmingBack.setOnClickListener(this);
         mClimbBack.setOnClickListener(this);
-        mClimbBack.setOnClickListener(this);
+        mBadmintonBack.setOnClickListener(this);
         tv_map.setOnClickListener(this);
     }
 
