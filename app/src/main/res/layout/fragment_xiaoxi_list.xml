@@ -13,7 +13,7 @@
         android:layout_marginBottom="5dp"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:background="@color/color_dbac62">
+        android:background="@color/color_ebc990">
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"

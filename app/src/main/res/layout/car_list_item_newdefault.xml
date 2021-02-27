@@ -19,24 +19,27 @@
             android:gravity="center_vertical"
             android:text="乒乓球"
             android:layout_toStartOf="@id/bt_join"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15sp" />
         <Button
             android:id="@+id/bt_join"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
             android:text="未成团"
-            android:background="@color/transparent"
+            android:gravity="center"
+            android:background="@drawable/shape_solid_radius20_blue"
             android:textColor="@color/white"
             android:textSize="15sp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:layout_marginTop="2dp"
-            android:background="@color/buy_gold"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginTop="1px"
+            android:background="@color/colorGray"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
     </RelativeLayout>
 
 
