@@ -67,6 +67,27 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
         tvSubmit.setOnClickListener(this);
     }
 
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+
+            case R.id.tv_sign_up:
+                    if (CostomUtil.isWiFiConnected(mContext)) {
+                        startServer();
+                        joinChat("牛气冲天" + " 的聊天室",CostomUtil.getIPAddress(mContext));
+                    } else {
+                        Toast.makeText(mContext, "加入失败，请稍后再试",
+                                Toast.LENGTH_SHORT).show();
+                    }
+//                Toast.makeText(this,"欢迎加入兴趣团",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.iv_back:
+                finish();
+                break;
+        }
+    }
+
     private void startServer(){
         Intent intent = new Intent(mContext, ServerService.class);
         intent.putExtra("userName","牛气冲天");
@@ -80,33 +101,6 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
         intent.putExtra("roomIp",roomIp);
         intent.putExtra("userName", "牛气冲天");
         mContext.startActivity(intent);
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-
-            case R.id.tv_sign_up:
-                if (CostomUtil.isWiFiConnected(mContext)) {
-                    //if (v.getId() == createBut.getId()) {
-                    //Log.d(TAG, "onClick: 创建服务器");
-//                    Log.d(TAG, "onClick: 服务是否运行：" + CostomUtil.isServiceRunning(this,ServerService.CLASSNAME));
-                    startServer();
-                    joinChat("牛气冲天" + " 的聊天室",CostomUtil.getIPAddress(mContext));
-//                    } else if (v.getId() == joinBut.getId()) {
-//                        intoRoom();
-//                    }
-                } else {
-                    //Log.d(TAG, "onClick: 未加入局域网");
-                    Toast.makeText(mContext, "未加入局域网",
-                            Toast.LENGTH_SHORT).show();
-                }
-                Toast.makeText(this,"欢迎加入兴趣团",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.iv_back:
-                finish();
-                break;
-        }
     }
 
     @Override
