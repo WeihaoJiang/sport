@@ -38,7 +38,7 @@ import java.io.InputStream;
  */
 public class PublishFragment extends Fragment {
    // Context mBase;
-    EditText mtitle,mprice,description,phoneNum,num;
+   TextView mtitle,mprice,description,phoneNum,num;
     ImageView mImageViewSelect;
     TextView classify, user_message;
     EditText tele, e_mail, user_name;
@@ -71,10 +71,10 @@ public class PublishFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_publish, container, false);
         //classify = (TextView) view.findViewById(R.id.classify);
-        mtitle = (EditText) view.findViewById(R.id.etpoduct_name);
-        mprice = (EditText) view.findViewById(R.id.time);
-        description = (EditText) view.findViewById(R.id.address);
-        phoneNum = (EditText)view.findViewById(R.id.phone_num);
+        mtitle = (TextView) view.findViewById(R.id.etpoduct_name);
+        mprice = (TextView) view.findViewById(R.id.time);
+        description = (TextView) view.findViewById(R.id.address);
+        phoneNum = (TextView)view.findViewById(R.id.phone_num);
         mImageViewSelect = (ImageView) view.findViewById(R.id.imageview_select_publish);
         num = view.findViewById(R.id.button_sub_num);
 //        Button mButtonSelect = (Button) view.findViewById(R.id.button_select_picture);
