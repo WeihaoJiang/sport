@@ -22,10 +22,10 @@
 
     <ImageView
         android:id="@+id/location"
-        android:layout_width="@dimen/dp_40"
-        android:layout_height="@dimen/dp_40"
-        android:layout_marginRight="135dp"
-        android:layout_marginTop="290dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginTop="280dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
@@ -39,8 +39,9 @@
         android:textSize="12sp"
         android:textColor="@color/white"
         android:layout_marginRight="100dp"
+        android:layout_marginTop="265dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/location"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <android.support.v7.widget.RecyclerView
