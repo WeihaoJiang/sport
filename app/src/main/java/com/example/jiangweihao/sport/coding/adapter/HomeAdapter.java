@@ -17,6 +17,7 @@ import com.example.jiangweihao.sport.coding.bean.Activityinfo1;
 import com.example.jiangweihao.sport.coding.view.NormalDialog;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder> {
 
@@ -25,9 +26,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder> {
     private String status;
     private NormalDialog mNormalDialog;
 
-    public HomeAdapter(Context mContext, ArrayList<Activityinfo1> activityInfoList, String s) {
+    public HomeAdapter(Context mContext, List<Activityinfo1> activityInfoList, String s) {
         this.mContext = mContext;
-        this.activityInfoList = activityInfoList;
+        this.activityInfoList = (ArrayList<Activityinfo1>) activityInfoList;
         this.status = s;
 //        mNormalDialog = new NormalDialog(this.mContext);
 
