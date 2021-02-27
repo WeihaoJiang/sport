@@ -7,6 +7,10 @@
     <color name="white_alphe">#99ffffff</color> <!-- 白色透明 -->
     <color name="gray">#efefef</color> <!-- 浅灰 -->
     <color name="green">#13b5b1</color>
+    <color name="editBack">#759cd4</color>
+    <color name="perpareBack">#e4e2e2</color>
+
+
 
     <!--################ 自定义颜色 ################ -->
     <color name="color_ea">#eaeaea</color>
