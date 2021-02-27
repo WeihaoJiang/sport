@@ -16,7 +16,7 @@
         android:textColor="#000000"
         android:ellipsize="end"
         android:lines="1"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:gravity="center_vertical"
         tools:text="一点羽毛球"
         android:includeFontPadding="false"/>
@@ -24,11 +24,12 @@
     <Button
         android:id="@+id/item_detail"
         android:layout_width="60dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_solid_radius20_blue"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:text="详情"
-        android:textSize="11sp"
+        android:textSize="13sp"
         android:layout_alignParentRight="true"/>
 
     <View

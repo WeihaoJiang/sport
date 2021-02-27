@@ -12,7 +12,8 @@ public class CreateGroupItemActivity extends AppCompatActivity implements View.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_group_item);
-
+        findViewById(R.id.back).setOnClickListener(this);
+        findViewById(R.id.submit).setOnClickListener(this);
     }
 
     @Override
@@ -20,6 +21,7 @@ public class CreateGroupItemActivity extends AppCompatActivity implements View.O
         int id = v.getId();
         switch (id) {
             case R.id.back:
+            case R.id.submit:
                 finish();
         }
     }
