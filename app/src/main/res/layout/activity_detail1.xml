@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_dbac62">
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/privacy_button_bg"
+            android:background="@drawable/shape_solid_radius100_blue"
             android:gravity="center"
             android:text="加入"
             android:textStyle="bold"
