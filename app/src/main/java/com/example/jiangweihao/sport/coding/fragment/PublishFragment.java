@@ -88,19 +88,6 @@ public class PublishFragment extends Fragment {
 //        });
         return view;
     }
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//
-//        if (requestCode == 42 && resultCode == -1) {
-//            try {
-//                mImageViewSelect.setImageBitmap(MediaStore.Images.Media.getBitmap(this.getActivity().getContentResolver(), data.getData()));
-//                mImageBytes = getBytes(this.getActivity().getContentResolver().openInputStream(data.getData()));
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
     public byte[] getBytes(InputStream inputStream) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         int bufferSize = 1024;
@@ -136,7 +123,5 @@ public class PublishFragment extends Fragment {
             BitmapDrawable mBitmapDrawable = new BitmapDrawable(bitmap);
             mImageViewSelect.setBackgroundDrawable(mBitmapDrawable);
         }
-
     }
-
 }

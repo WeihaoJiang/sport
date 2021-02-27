@@ -1,7 +1,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+   >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,9 +12,9 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
             android:stretchColumns="1">
 
             <TableRow android:padding="12dp">
@@ -24,29 +25,29 @@
                     android:text="活动名称"
                     android:textSize="15sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/etpoduct_name"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:enabled="false"
                     android:singleLine="true" />
             </TableRow>
 
-            <TableRow android:padding="12dp">
-
+            <TableRow android:padding="6dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="活动地点："
                     android:textSize="15sp" />
-
-                <TextView
+                <EditText
                     android:id="@+id/address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/dp_20"
-                    android:singleLine="false"
-                    android:maxLines="3"
-                    android:textSize="15sp" />
+                    android:lines="3"
+                    android:enabled="false"
+                    android:textSize="15sp"
+                    android:drawableRight="@mipmap/card_weather_changecityicon"
+                    android:layout_marginRight="@dimen/dp_20"/>
 
             </TableRow>
 
@@ -59,13 +60,13 @@
                     android:text="活动时间："
                     android:textSize="15sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/time"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:enabled="false"
                     android:singleLine="true" />
             </TableRow>
-
             <TableRow android:padding="12dp">
 
                 <TextView
@@ -74,10 +75,11 @@
                     android:text="活动人数："
                     android:textSize="15sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/phone_num"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:enabled="false"
                     android:singleLine="true" />
             </TableRow>
 
@@ -90,22 +92,36 @@
                     android:text="剩余名额:"
                     android:textSize="15sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/button_sub_num"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:enabled="false"
                     android:singleLine="true" />
             </TableRow>
+            <TableRow android:padding="12dp">
 
+<!--                <Button-->
+<!--                    android:id="@+id/button_select_picture"-->
+<!--                    style="?android:textAppearanceSmall"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="视图冲击"-->
+<!--                    android:textStyle="bold" />-->
 
-            <ImageView
-                android:id="@+id/imageview_select_publish"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="3dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@android:drawable/screen_background_light_transparent" />
+                <ImageView
+                    android:id="@+id/imageview_select_publish"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/screen_background_light_transparent" />
+            </TableRow>
+
 
 
             <ProgressBar
@@ -122,6 +138,8 @@
                 android:layout_height="wrap_content" />
         </TableLayout>
     </LinearLayout>
+
+
 
 
 </ScrollView>

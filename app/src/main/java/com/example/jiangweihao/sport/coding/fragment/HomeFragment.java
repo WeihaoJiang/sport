@@ -3,6 +3,7 @@ package com.example.jiangweihao.sport.coding.fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.coding.activity.GroupDetailActivity;
+import com.example.jiangweihao.sport.coding.activity.MainActivity;
 import com.example.jiangweihao.sport.coding.activity.NearByActivity;
 import com.example.jiangweihao.sport.coding.adapter.HomeAdapter;
 import com.example.jiangweihao.sport.coding.adapter.RecycleViewDivider;
@@ -19,9 +22,11 @@ import com.example.jiangweihao.sport.coding.bean.Activityinfo1;
 import com.example.jiangweihao.sport.coding.utils.DateUtils;
 
 import java.io.ByteArrayOutputStream;
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -35,10 +40,9 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     private ImageView mSwimmingBack,mClimbBack,mBadmintonBack;
     private Button tv_map;
     private RecyclerView mSwimmingRecyclerView,mClimbRecyclerView,mBadmintonRecyclerView;
-    private ArrayList<Activityinfo1> mSwimmingList = new ArrayList<Activityinfo1>();
-    private ArrayList<Activityinfo1> mClimbList = new ArrayList<Activityinfo1>();
-    private ArrayList<Activityinfo1> mBadmintonList = new ArrayList<Activityinfo1>();
-
+    private List<Activityinfo1> mSwimmingList = new ArrayList<Activityinfo1>();
+    private List<Activityinfo1> mClimbList = new ArrayList<Activityinfo1>();
+    private List<Activityinfo1> mBadmintonList = new ArrayList<Activityinfo1>();
     private String status;
 
     @Override
@@ -48,8 +52,6 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     public void initView(View view) {
-
-
         status = (String) getArguments().get("status");
         mSwimmingRecyclerView = view.findViewById(R.id.rv_swimming_list);
         mClimbRecyclerView = view.findViewById(R.id.rv_climb_list);
@@ -67,13 +69,11 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     @Override
     protected void loadData() {
 
-
     }
-
 
     @Override
     public void onClick(View v) {
-//        Intent intent = new Intent(getActivity(),"")
+        Intent intent = new Intent(getActivity(), GroupDetailActivity.class);
         switch (v.getId()) {
             case R.id.tv_map:
 //                Toast.makeText(getContext(),"搜索附近活动团",Toast.LENGTH_LONG).show();
@@ -82,12 +82,17 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 }
                 break;
             case R.id.iv_swimming_back:
+                intent.putExtra("name","游泳队");
                 break;
             case R.id.iv_climb_back:
+                intent.putExtra("name","攀岩队");
+//                bundle.putSerializable("activity",(Serializable)mClimbList);
                 break;
             case R.id.iv_badminton_back:
+                intent.putExtra("name","羽毛球队");
                 break;
         }
+        getContext().startActivity(intent);
     }
 
     private void setAdapter() {
