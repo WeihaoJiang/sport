@@ -17,6 +17,7 @@
         android:textStyle="bold"
         android:text="一点羽毛球小分队"
         android:layout_marginTop="20dp"
+        android:background="@drawable/recycle_bg"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -26,19 +27,41 @@
         android:gravity="center_vertical"
         android:textSize="16dp"
         android:textStyle="bold|italic"
+        android:layout_marginTop="@dimen/dp_20"
         android:text="一点羽毛球小分队详情：\n详情\n详情"
+        android:background="@drawable/recycle_bg"
         app:layout_constraintTop_toBottomOf="@id/group_name" />
 
-    <TextView
-        android:id="@+id/list_name"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="center_vertical"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:text="活动列表："
-        app:layout_constraintTop_toBottomOf="@id/description" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/recycle_bg"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        >
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="活动列表："
+             />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/join_group"
+            app:layout_constraintTop_toBottomOf="@id/list_name"/>
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/join_group"
@@ -55,11 +78,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/item_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/join_group"
-        app:layout_constraintTop_toBottomOf="@id/list_name"/>
 
 </android.support.constraint.ConstraintLayout>
