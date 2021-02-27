@@ -69,7 +69,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="联系电话："
+                    android:text="活动人数："
                     android:textSize="15sp" />
 
                 <EditText
@@ -96,16 +96,16 @@
             </TableRow>
             <TableRow android:padding="12dp">
 
-                <Button
-                    android:id="@+id/button_select_picture"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:text="视图冲击"
-                    android:textStyle="bold" />
+<!--                <Button-->
+<!--                    android:id="@+id/button_select_picture"-->
+<!--                    style="?android:textAppearanceSmall"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_marginTop="3dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="视图冲击"-->
+<!--                    android:textStyle="bold" />-->
 
                 <ImageView
                     android:id="@+id/imageview_select_publish"

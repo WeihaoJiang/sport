@@ -12,7 +12,6 @@ import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.FindCallback;
 import com.example.jiangweihao.sport.R;
 import com.example.jiangweihao.sport.coding.adapter.AppointAdapter;
-import com.example.jiangweihao.sport.coding.adapter.HomeAdapter;
 import com.example.jiangweihao.sport.coding.adapter.RecycleViewDivider;
 
 import java.util.ArrayList;
@@ -31,7 +30,7 @@ public class AppointActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        mRecyclerView = findViewById(R.id.rv_home_list);
+        mRecyclerView = findViewById(R.id.rv_swimming_list);
         iv_back = findViewById(R.id.iv_back);
         iv_back.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -10,8 +10,8 @@
     </style>
 
     <style name="AppWelcome" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/bg_normal</item>
-        <item name="android:background">@color/color_dbac62</item>
+<!--        <item name="android:windowBackground">@drawable/panyan</item>-->
+        <item name="android:windowBackground">@color/color_ff552e</item>
     </style>
 
     <!--我的页面样式-->

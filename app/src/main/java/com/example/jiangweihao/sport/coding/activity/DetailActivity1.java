@@ -2,6 +2,8 @@ package com.example.jiangweihao.sport.coding.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 import com.avos.avoscloud.AVObject;
 import com.bin.david.form.core.SmartTable;
 import com.example.jiangweihao.sport.R;
+import com.example.jiangweihao.sport.coding.bean.Activityinfo1;
 import com.example.jiangweihao.sport.coding.bean.UserInfo1;
 
 import org.greenrobot.eventbus.EventBus;
@@ -34,14 +37,18 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
     private List<AVObject> mList = new ArrayList<>();
 
 
-    public static void intentTo(String objectId, Context context) {
+    public static void intentTo(Activityinfo1 activityinfo1, Context context) {
 
         mContext = context;
         Intent intent = new Intent(context, DetailActivity1.class);
-        intent.putExtra("id", objectId);
+        intent.putExtra("id", activityinfo1);
         context.startActivity(intent);
     }
 
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     protected int getLayoutId() {
@@ -63,7 +70,6 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
         switch (v.getId()) {
 
             case R.id.tv_sign_up:
-
                 Toast.makeText(this,"欢迎加入兴趣团",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.iv_back:

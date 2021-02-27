@@ -21,6 +21,9 @@ public abstract class BaseActivity extends FragmentActivity {
         initData();
     }
 
+    protected void getIntent(Bundle bundle){
+
+    }
     protected void initData() {
     }
 

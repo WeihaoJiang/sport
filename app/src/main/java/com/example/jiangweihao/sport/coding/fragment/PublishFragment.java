@@ -2,9 +2,13 @@ package com.example.jiangweihao.sport.coding.fragment;
 
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +25,7 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.SaveCallback;
 import com.example.jiangweihao.sport.R;
 import com.example.jiangweihao.sport.coding.activity.MainActivity;
+import com.example.jiangweihao.sport.coding.bean.Activityinfo1;
 
 
 import java.io.ByteArrayOutputStream;
@@ -39,11 +44,25 @@ public class PublishFragment extends Fragment {
     EditText tele, e_mail, user_name;
     TextView user_mess;
 
+    Activityinfo1 activityinfo;
     byte[] mImageBytes = null;
     Handler mHandler = new Handler();
 
     public PublishFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Intent intent = getActivity().getIntent();
+        activityinfo = (Activityinfo1) intent.getSerializableExtra("id");
+
     }
 
     @Override
@@ -56,35 +75,32 @@ public class PublishFragment extends Fragment {
         mprice = (EditText) view.findViewById(R.id.time);
         description = (EditText) view.findViewById(R.id.address);
         phoneNum = (EditText)view.findViewById(R.id.phone_num);
-//        user_message = (TextView) view.findViewById(R.id.fill);
         mImageViewSelect = (ImageView) view.findViewById(R.id.imageview_select_publish);
-//        user_mess= (TextView) view.findViewById(R.id.user_mess);
         num = view.findViewById(R.id.button_sub_num);
-
-        Button mButtonSelect = (Button) view.findViewById(R.id.button_select_picture);
-        mButtonSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-                startActivityForResult(intent, 42);
-            }
-        });
+//        Button mButtonSelect = (Button) view.findViewById(R.id.button_select_picture);
+//        mButtonSelect.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//                intent.setType("image/*");
+//                startActivityForResult(intent, 42);
+//            }
+//        });
         return view;
     }
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 42 && resultCode == -1) {
-            try {
-                mImageViewSelect.setImageBitmap(MediaStore.Images.Media.getBitmap(this.getActivity().getContentResolver(), data.getData()));
-                mImageBytes = getBytes(this.getActivity().getContentResolver().openInputStream(data.getData()));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        super.onActivityResult(requestCode, resultCode, data);
+//
+//        if (requestCode == 42 && resultCode == -1) {
+//            try {
+//                mImageViewSelect.setImageBitmap(MediaStore.Images.Media.getBitmap(this.getActivity().getContentResolver(), data.getData()));
+//                mImageBytes = getBytes(this.getActivity().getContentResolver().openInputStream(data.getData()));
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
     public byte[] getBytes(InputStream inputStream) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         int bufferSize = 1024;
@@ -107,6 +123,20 @@ public class PublishFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        initDate();
+    }
+    private void initDate(){
+        mtitle.setText(activityinfo.getName());
+        mprice.setText(activityinfo.getTime());
+        description.setText(activityinfo.getActivityAddress());
+        phoneNum.setText(String.valueOf(activityinfo.getTotalNum()));
+        num.setText(String.valueOf(activityinfo.getNum()));
+        if (activityinfo.getName().equals("火爆的游泳团")){
+           Bitmap bitmap = BitmapFactory.decodeByteArray(activityinfo.getImage(), 0, activityinfo.getImage().length);
+            BitmapDrawable mBitmapDrawable = new BitmapDrawable(bitmap);
+            mImageViewSelect.setBackgroundDrawable(mBitmapDrawable);
+        }
+
     }
 
 }

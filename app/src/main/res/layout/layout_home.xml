@@ -3,10 +3,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    >
-
+    android:layout_height="match_parent">
 
         <RelativeLayout
             android:id="@+id/rl_titile"
@@ -43,11 +40,122 @@
                 android:textColor="@color/white"
                 android:textSize="10sp" />
         </RelativeLayout>
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rv_home_list">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/swimming_title"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/dp_20"
+        android:background="@drawable/recycle_bg"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="游泳组"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/iv_swimming_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/arrow_more_profile" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_swimming_list">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
 
-    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/climb_title"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/dp_20"
+        android:background="@drawable/recycle_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_climb_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/climb_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="攀岩组"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/iv_climb_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/arrow_more_profile" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_climb_list">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/badminton_title"
+        android:layout_marginTop="5dp"
+        android:padding="@dimen/dp_20"
+        android:background="@drawable/recycle_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_badminton_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/badminton_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="羽毛球组"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/iv_badminton_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/arrow_more_profile" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_badminton_list">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
 
 </LinearLayout>

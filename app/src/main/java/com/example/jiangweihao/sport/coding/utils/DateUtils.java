@@ -34,6 +34,21 @@ public class DateUtils {
         return mMonth + "月" + mDay + "日";
     }
 
+    /**
+     * 获取当前日期几月几号
+     */
+    public static String getDateString(int i) {
+
+
+        final Calendar c = Calendar.getInstance();
+        c.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+        mMonth = String.valueOf(c.get(Calendar.MONTH) + 1+i);// 获取当前月份
+        mDay = String.valueOf(c.get(Calendar.DAY_OF_MONTH));// 获取当前月份的日期号码
+//        if(Integer.parseInt(mDay) > MaxDayFromDay_OF_MONTH(Integer.parseInt(mYear),(Integer.parseInt(mMonth)))){
+//            mDay = String.valueOf(MaxDayFromDay_OF_MONTH(Integer.parseInt(mYear),(Integer.parseInt(mMonth))));
+//        }
+        return mMonth + "月" + mDay + "日";
+    }
 
     /**
      * 获取当前年月日
@@ -55,6 +70,24 @@ public class DateUtils {
     }
 
 
+    /**
+     * 获取当前年月日
+     * 
+     * @return
+     */
+    public static String StringData(int i) {
+
+
+        final Calendar c = Calendar.getInstance();
+        c.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+        mYear = String.valueOf(c.get(Calendar.YEAR));// 获取当前年份
+        mMonth = String.valueOf(c.get(Calendar.MONTH) + 1 + i);// 获取当前月份
+        mDay = String.valueOf(c.get(Calendar.DAY_OF_MONTH));// 获取当前月份的日期号码
+        if(Integer.parseInt(mDay) > MaxDayFromDay_OF_MONTH(Integer.parseInt(mYear),(Integer.parseInt(mMonth)))){
+            mDay = String.valueOf(MaxDayFromDay_OF_MONTH(Integer.parseInt(mYear),(Integer.parseInt(mMonth))));
+        }
+        return mYear + "-" + (mMonth.length()==1?"0"+mMonth:mMonth) + "-" + (mDay.length()==1?"0"+mDay:mDay);
+    }
     /**
      * 根据当前日期获得是星期几
      * 

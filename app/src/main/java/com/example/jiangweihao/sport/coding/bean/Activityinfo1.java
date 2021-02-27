@@ -1,9 +1,14 @@
 package com.example.jiangweihao.sport.coding.bean;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
 /**
  * Created by huang on 2017/11/1.
  */
-public class Activityinfo1 {
+public class Activityinfo1 implements Serializable {
+
     private String name;
     private int num, totalNum;
     private String time;
@@ -11,6 +16,16 @@ public class Activityinfo1 {
     private String activityAddress;
     private String url;
     private Boolean isSuccess;
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
+    }
+
+    byte image[] = new byte[125*250];
 
 
     public int getTotalNum() {

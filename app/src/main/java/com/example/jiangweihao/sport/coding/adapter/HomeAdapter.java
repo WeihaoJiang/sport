@@ -29,7 +29,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder> {
         this.mContext = mContext;
         this.activityInfoList = activityInfoList;
         this.status = s;
-        mNormalDialog = new NormalDialog(this.mContext);
+//        mNormalDialog = new NormalDialog(this.mContext);
 
     }
 
@@ -52,7 +52,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder> {
             @Override
             public void onClick(View v) {
 //                Toast.makeText(mContext,"欢迎加入本团",Toast.LENGTH_LONG).show();
-                DetailActivity1.intentTo("1",mContext);
+                DetailActivity1.intentTo(activityinfo,mContext);
+
             }
 
         });

@@ -13,7 +13,6 @@ import com.avos.avoscloud.FindCallback;
 import com.example.jiangweihao.sport.R;
 import com.example.jiangweihao.sport.coding.adapter.RecycleViewDivider;
 import com.example.jiangweihao.sport.coding.adapter.ReserveAdapter;
-import com.example.jiangweihao.sport.coding.adapter.ReserveAdapter1;
 import com.example.jiangweihao.sport.coding.utils.SPUtils;
 
 import java.util.ArrayList;
@@ -49,7 +48,7 @@ public class ReserveActivity extends BaseActivity {
         super.initView();
         ivBack = findViewById(R.id.iv_back);
 
-        mRecyclerView = findViewById(R.id.rv_home_list);
+        mRecyclerView = findViewById(R.id.rv_swimming_list);
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override

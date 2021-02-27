@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:id="@+id/rll"
     android:layout_width="match_parent"
-    android:background="@color/c_a59a93"
     android:layout_height="wrap_content">
 
     <RelativeLayout
@@ -29,6 +28,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:text="未成团"
+            android:background="@color/transparent"
             android:textColor="@color/white"
             android:textSize="15sp" />
         <View
