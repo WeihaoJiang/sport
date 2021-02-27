@@ -1,97 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-        <RelativeLayout
-            android:id="@+id/rl_titile"
-            android:layout_marginBottom="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:background="@color/color_dbac62">
-            <TextView
-                android:id="@+id/tv_title"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="我的兴趣团"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-            <Button
-                android:id="@+id/tv_map"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="@dimen/dp_3"
-                android:layout_marginRight="10dp"
-                android:background="@color/transparent"
-                android:drawableTop="@mipmap/card_weather_changecityicon"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:singleLine="true"
-                android:text="附近"
-                android:textColor="@color/white"
-                android:textSize="10sp" />
-        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_titile"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_ebc990">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="我的兴趣团"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:drawableTop="@mipmap/card_weather_changecityicon"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="附近"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
     <LinearLayout
+        android:id="@+id/swimming_title"
         android:layout_width="360dp"
         android:layout_height="160dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/swimming_title"
-        android:layout_marginTop="5dp"
-        android:padding="@dimen/dp_20"
+        android:layout_marginTop="25dp"
         android:background="@drawable/recycle_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
         <RelativeLayout
             android:id="@+id/rl_title"
             android:layout_width="match_parent"
             android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/iv_swimming_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="center"
+                android:src="@drawable/arrow_more_profile" />
+
             <TextView
                 android:id="@+id/group_name"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
                 android:singleLine="true"
                 android:text="游泳组"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-        <ImageView
-            android:id="@+id/iv_swimming_back"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="@dimen/dp_20"
-            android:layout_alignParentRight="true"
-            android:scaleType="center"
-            android:src="@drawable/arrow_more_profile" />
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
         </RelativeLayout>
+
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_swimming_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_swimming_list">
-        </android.support.v7.widget.RecyclerView>
+            android:paddingLeft="12dp"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/climb_title"
         android:layout_width="360dp"
         android:layout_height="160dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/climb_title"
-        android:layout_marginTop="5dp"
-        android:padding="@dimen/dp_20"
+        android:layout_marginTop="25dp"
         android:background="@drawable/recycle_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
 
         <RelativeLayout
             android:id="@+id/rl_climb_title"
             android:layout_width="match_parent"
             android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/iv_climb_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="center"
+                android:src="@drawable/arrow_more_profile" />
+
             <TextView
                 android:id="@+id/climb_group_name"
                 android:layout_width="wrap_content"
@@ -99,38 +113,44 @@
                 android:layout_marginLeft="10dp"
                 android:singleLine="true"
                 android:text="攀岩组"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-            <ImageView
-                android:id="@+id/iv_climb_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="@dimen/dp_20"
-                android:layout_alignParentRight="true"
-                android:scaleType="center"
-                android:src="@drawable/arrow_more_profile" />
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
         </RelativeLayout>
+
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_climb_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_climb_list">
+            android:paddingLeft="@dimen/dp_12">
 
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/badminton_title"
         android:layout_width="360dp"
         android:layout_height="160dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/badminton_title"
-        android:layout_marginTop="5dp"
-        android:padding="@dimen/dp_20"
+        android:layout_marginTop="25dp"
         android:background="@drawable/recycle_bg"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
 
         <RelativeLayout
             android:id="@+id/rl_badminton_title"
             android:layout_width="match_parent"
             android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/iv_badminton_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="center"
+                android:src="@drawable/arrow_more_profile" />
+
             <TextView
                 android:id="@+id/badminton_group_name"
                 android:layout_width="wrap_content"
@@ -138,24 +158,17 @@
                 android:layout_marginLeft="10dp"
                 android:singleLine="true"
                 android:text="羽毛球组"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-            <ImageView
-                android:id="@+id/iv_badminton_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginRight="@dimen/dp_20"
-                android:layout_alignParentRight="true"
-                android:scaleType="center"
-                android:src="@drawable/arrow_more_profile" />
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
         </RelativeLayout>
+
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_badminton_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_badminton_list">
-        </android.support.v7.widget.RecyclerView>
+            android:paddingLeft="@dimen/dp_12"/>
     </LinearLayout>
-
-
 
 </LinearLayout>

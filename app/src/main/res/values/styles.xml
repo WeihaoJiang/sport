@@ -11,7 +11,7 @@
 
     <style name="AppWelcome" parent="AppTheme">
 <!--        <item name="android:windowBackground">@drawable/panyan</item>-->
-        <item name="android:windowBackground">@color/color_ff552e</item>
+        <item name="android:windowBackground">@color/color_f7f7f7</item>
     </style>
 
     <!--我的页面样式-->
