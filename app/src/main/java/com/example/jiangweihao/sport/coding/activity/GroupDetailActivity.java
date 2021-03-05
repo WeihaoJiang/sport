@@ -41,6 +41,7 @@ public class GroupDetailActivity extends AppCompatActivity implements View.OnCli
         mRecyclerView.addItemDecoration(new RecycleViewDivider(this, LinearLayoutManager.VERTICAL));
         mRecyclerView.setAdapter(detailAdapter);
         findViewById(R.id.join_group).setOnClickListener(this);
+        findViewById(R.id.back).setOnClickListener(this);
     }
 
     private void initData() {
@@ -104,6 +105,7 @@ public class GroupDetailActivity extends AppCompatActivity implements View.OnCli
         int id = v.getId();
         switch (id) {
             case R.id.join_group:
+            case R.id.back:
                 finish();
                 break;
         }
