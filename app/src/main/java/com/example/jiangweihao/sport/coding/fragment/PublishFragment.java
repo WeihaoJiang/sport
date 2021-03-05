@@ -77,15 +77,6 @@ public class PublishFragment extends Fragment {
         phoneNum = (TextView)view.findViewById(R.id.phone_num);
         mImageViewSelect = (ImageView) view.findViewById(R.id.imageview_select_publish);
         num = view.findViewById(R.id.button_sub_num);
-//        Button mButtonSelect = (Button) view.findViewById(R.id.button_select_picture);
-//        mButtonSelect.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-//                intent.setType("image/*");
-//                startActivityForResult(intent, 42);
-//            }
-//        });
         return view;
     }
     public byte[] getBytes(InputStream inputStream) throws IOException {
@@ -113,15 +104,15 @@ public class PublishFragment extends Fragment {
         initDate();
     }
     private void initDate(){
-        mtitle.setText(activityinfo.getName());
-        mprice.setText(activityinfo.getTime());
-        description.setText(activityinfo.getActivityAddress());
-        phoneNum.setText(String.valueOf(activityinfo.getTotalNum()));
-        num.setText(String.valueOf(activityinfo.getNum()));
-        if (activityinfo.getName().equals("火爆的游泳团")){
-           Bitmap bitmap = BitmapFactory.decodeByteArray(activityinfo.getImage(), 0, activityinfo.getImage().length);
-            BitmapDrawable mBitmapDrawable = new BitmapDrawable(bitmap);
-            mImageViewSelect.setBackgroundDrawable(mBitmapDrawable);
-        }
+//        mtitle.setText(activityinfo.getName());
+//        mprice.setText(activityinfo.getTime());
+//        description.setText(activityinfo.getActivityAddress());
+//        phoneNum.setText(String.valueOf(activityinfo.getTotalNum()));
+//        num.setText(String.valueOf(activityinfo.getNum()));
+//        if (activityinfo.getImage() != null){
+//           Bitmap bitmap = BitmapFactory.decodeByteArray(activityinfo.getImage(), 0, activityinfo.getImage().length);
+//            BitmapDrawable mBitmapDrawable = new BitmapDrawable(bitmap);
+//            mImageViewSelect.setBackgroundDrawable(mBitmapDrawable);
+//        }
     }
 }

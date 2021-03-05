@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -51,7 +52,33 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i("nft"," DetailActivity1 onCreate " + this.hashCode());
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.i("nft"," DetailActivity1 onPause " + this.hashCode());
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.i("nft"," DetailActivity1 onStart " + this.hashCode());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.i("nft"," DetailActivity1 onStop " + this.hashCode());
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("nft"," DetailActivity1 onRestart " + this.hashCode() );
+    }
+
 
     @Override
     protected int getLayoutId() {
@@ -65,6 +92,12 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
         tvSubmit = findViewById(R.id.tv_sign_up);
         ivBack.setOnClickListener(this);
         tvSubmit.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.i("nft"," DetailActivity1 onNewIntent " + this.hashCode());
     }
 
     private void startServer(){
@@ -85,22 +118,25 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-
             case R.id.tv_sign_up:
-                if (CostomUtil.isWiFiConnected(mContext)) {
-                    //if (v.getId() == createBut.getId()) {
-                    //Log.d(TAG, "onClick: 创建服务器");
-//                    Log.d(TAG, "onClick: 服务是否运行：" + CostomUtil.isServiceRunning(this,ServerService.CLASSNAME));
-                    startServer();
-                    joinChat("牛气冲天" + " 的聊天室",CostomUtil.getIPAddress(mContext));
-//                    } else if (v.getId() == joinBut.getId()) {
-//                        intoRoom();
-//                    }
-                } else {
-                    //Log.d(TAG, "onClick: 未加入局域网");
-                    Toast.makeText(mContext, "未加入局域网",
-                            Toast.LENGTH_SHORT).show();
-                }
+//                if (CostomUtil.isWiFiConnected(mContext)) {
+//                    //if (v.getId() == createBut.getId()) {
+//                    //Log.d(TAG, "onClick: 创建服务器");
+////                    Log.d(TAG, "onClick: 服务是否运行：" + CostomUtil.isServiceRunning(this,ServerService.CLASSNAME));
+//                    startServer();
+//                    joinChat("牛气冲天" + " 的聊天室",CostomUtil.getIPAddress(mContext));
+////                    } else if (v.getId() == joinBut.getId()) {
+////                        intoRoom();
+////                    }
+//                } else {
+//                    //Log.d(TAG, "onClick: 未加入局域网");
+//                    Toast.makeText(mContext, "未加入局域网",
+//                            Toast.LENGTH_SHORT).show();
+//                }
+                Intent intent = new Intent(this,DetailActivity1.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
                 Toast.makeText(this,"欢迎加入兴趣团",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.iv_back:
@@ -114,11 +150,13 @@ public class DetailActivity1 extends BaseActivity implements View.OnClickListene
         super.onResume();
         //for (int i = 0; i < DateUtils.get7date().size(); i++) {
         //}
+        Log.i("nft"," DetailActivity1 onResume " + this.hashCode());
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.i("nft"," DetailActivity1 onDestroy " + this.hashCode());
         EventBus.getDefault().unregister(this);
         list.clear();
 

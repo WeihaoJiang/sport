@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:text="点我"
+        android:id="@+id/test"
+        android:textSize="@dimen/dp_20"/>
     <com.example.jiangweihao.sport.coding.view.ViewPagerSlide
         android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
@@ -19,5 +26,4 @@
         android:layout_height="59dp"
         app:tabRippleColor="@android:color/transparent"
         app:tabIndicatorHeight="0dp" />
-
 </LinearLayout>

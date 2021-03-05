@@ -122,7 +122,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mSwimmingList.clear();
         Activityinfo1 activityinfo1 = new Activityinfo1("火爆的游泳团",10 ,DateUtils.getDateString(9),"北京市朝阳区天辰东路11号");
         activityinfo1.setNum(3);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.panyan);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.youyong1);
         activityinfo1.setImage(Bitmap2Bytes(bitmap));
         Activityinfo1 activityinfo2= new Activityinfo1("地表最强游泳团",10 ,DateUtils.getDateString(7),"北京市丰台区丰体北路与西四环南路交叉路口往西南约200米(丰台体育中心)");
         activityinfo2.setNum(4);
@@ -135,6 +135,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mClimbList.clear();
         Activityinfo1 activityinfo4= new Activityinfo1("不服输攀岩",10 ,DateUtils.getDateString(3),"北京市朝阳区西坝河南路4号");
         activityinfo4.setNum(0);
+        Bitmap bitmap1 = BitmapFactory.decodeResource(getResources(), R.drawable.panyan1);
+        activityinfo4.setImage(Bitmap2Bytes(bitmap1));
         Activityinfo1 activityinfo5 = new Activityinfo1("打破极限攀岩",15 ,DateUtils.getDateString(0),"北清路68号院用友软件园北区16号楼D座-1层");
         activityinfo5.setNum(1);
         mClimbList.add(activityinfo4);
@@ -144,6 +146,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mBadmintonList.clear();
         Activityinfo1 activityinfo7 = new Activityinfo1("望京羽毛球团",18 ,DateUtils.getDateString(3),"丰台区顺发路玉泉营博锐体育园内");
         activityinfo7.setNum(8);
+        Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(), R.drawable.yumaoqiu1);
+        activityinfo4.setImage(Bitmap2Bytes(bitmap2));
         Activityinfo1 activityinfo6= new Activityinfo1("羽毛团",50 ,DateUtils.getDateString(6),"农展南路1号朝阳公园");
         activityinfo6.setNum(32);
         mBadmintonList.add(activityinfo6);

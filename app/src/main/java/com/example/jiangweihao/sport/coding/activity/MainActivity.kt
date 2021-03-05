@@ -1,5 +1,7 @@
 package com.example.jiangweihao.sport.coding.activity
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.design.widget.TabLayout
@@ -7,7 +9,10 @@ import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.KeyEvent
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.example.jiangweihao.sport.R
 import com.example.jiangweihao.sport.coding.fragment.*
@@ -27,9 +32,9 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     var mListIcon = ArrayList<Int>()
     var mListSelectIcon = ArrayList<Int>()
     private lateinit var status: String
+    private lateinit var test:TextView
     private lateinit var main_viewpager: ViewPagerSlide
     lateinit var mPagerAdapter: MyFragmentPagerAdapter
-
     private val fgs = mutableListOf<Fragment>(
 
             FindCheFragment(),
@@ -47,6 +52,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.i("nft"," MainActivty onCreate " + this.hashCode())
         setContentView(R.layout.activity_main)
 //        status = intent.getStringExtra("status")
         status = "niufeitingting@126.com"
@@ -61,6 +67,7 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
         init()
         main_viewpager.adapter = mPagerAdapter
         main_tab.setupWithViewPager(main_viewpager)
+
         for (i in 0 until main_tab.tabCount) {
             main_tab.getTabAt(i)!!.setIcon(mListIcon.get(i))
             main_tab.getTabAt(i)!!.setText(mListTitle.get(i))
@@ -78,6 +85,10 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     private fun init() {
         main_viewpager = findViewById(R.id.main_viewpager)
 
+        test = findViewById(R.id.test);
+        test.setOnClickListener(View.OnClickListener {
+            startActivity(Intent(this,DetailActivity1::class.java))
+        })
         mListTitle.add("首页")
         mListTitle.add("消息")
         mListTitle.add("关于")
@@ -90,7 +101,6 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
         mListSelectIcon.add(R.drawable.ic_look_yellow)
         mListSelectIcon.add(R.drawable.ic_about_yellow)
     }
-
 
     override fun onTabReselected(tab: TabLayout.Tab) {
     }
@@ -110,14 +120,31 @@ class MainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
 
     override fun onResume() {
         super.onResume()
-
+        Log.i("nft","MainActivity onresum   " + this.hashCode());
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.i("nft","MainActivity onPause   " + this.hashCode());
+    }
     override fun onDestroy() {
         super.onDestroy()
+        Log.i("nft","MainActivity onDestroy  " + this.hashCode());
     }
 
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("nft","MainActivity onRestart    " + this.hashCode());
+    }
+    override fun onStart() {
+        super.onStart()
+        Log.i("nft","MainActivity onStart  " + this.hashCode() );
+    }
 
+    override fun onStop() {
+        super.onStop()
+        Log.i("nft","MainActivity onStop  " + this.hashCode());
+    }
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             exitBy2Click()
